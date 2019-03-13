@@ -1,4 +1,4 @@
-package MaxPointsParticipantsMV;
+package Lecture02MaxPointsParticipantsMV;
 
 
 import junit.framework.Test;
