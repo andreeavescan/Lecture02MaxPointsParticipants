@@ -6,9 +6,11 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 
-import MaxPointsParticipantsMV.repository.Repository;
-import MaxPointsParticipantsMV.controller.ParticipantController;
+//import MaxPointsParticipantsMV.repository.Repository;
+//import MaxPointsParticipantsMV.controller.ParticipantController;
 
+import repository.Repository;
+import controller.ParticipantController;
 
 public class AppTestWBT extends TestCase {
     private Repository rep;
@@ -17,7 +19,7 @@ public class AppTestWBT extends TestCase {
 
     public void test_tc_1_AllStatements() {
 
-        rep = new Repository("src/test/java/MaxPointsParticipantsMV/FileParticipantsMaxStatements.txt");
+        rep = new Repository("src/test/java/Lecture02MaxPointsParticipantsMV/FileParticipantsMaxStatements.txt");
 
         ctrl=new ParticipantController(rep);
         int noParticipantsMax= ctrl.getNumberOfParticipantWithMaxPointsReceived();
@@ -29,7 +31,7 @@ public class AppTestWBT extends TestCase {
     public void test_tc_2_S3_True() {
 
 
-        rep = new Repository("src/test/java/MaxPointsParticipantsMV/FileParticipantsMaxConditionsS3.txt");
+        rep = new Repository("src/test/java/Lecture02MaxPointsParticipantsMV/FileParticipantsMaxConditionsS3.txt");
 
         ctrl=new ParticipantController(rep);
         int noParticipantsMax= ctrl.getNumberOfParticipantWithMaxPointsReceived();
@@ -40,7 +42,7 @@ public class AppTestWBT extends TestCase {
 
     public void test_tc_3_Path1() {
 
-        rep = new Repository("src/test/java/MaxPointsParticipantsMV/FileParticipantsMaxPath1.txt");
+        rep = new Repository("src/test/java/Lecture02MaxPointsParticipantsMV/FileParticipantsMaxPath1.txt");
 
         ctrl=new ParticipantController(rep);
         int noParticipantsMax= ctrl.getNumberOfParticipantWithMaxPointsReceived();
@@ -51,7 +53,7 @@ public class AppTestWBT extends TestCase {
 
     public void test_tc_4_Loop_1() {
 
-        rep = new Repository("src/test/java/MaxPointsParticipantsMV/FileParticipantsMaxLoop1.txt");
+        rep = new Repository("src/test/java/Lecture02MaxPointsParticipantsMV/FileParticipantsMaxLoop1.txt");
 
         ctrl=new ParticipantController(rep);
         int noParticipantsMax= ctrl.getNumberOfParticipantWithMaxPointsReceived();
@@ -62,7 +64,7 @@ public class AppTestWBT extends TestCase {
 
     public void test_tc_5_Loop_2() {
 
-        rep = new Repository("src/test/java/MaxPointsParticipantsMV/FileParticipantsMaxLoop2.txt");
+        rep = new Repository("src/test/java/Lecture02MaxPointsParticipantsMV/FileParticipantsMaxLoop2.txt");
 
         ctrl=new ParticipantController(rep);
         int noParticipantsMax= ctrl.getNumberOfParticipantWithMaxPointsReceived();
