@@ -17,11 +17,7 @@ public class AppTest
     /**
      * Rigorous Test :-)
      */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+
     private Repository rep;
     private ParticipantController ctrl;
 
